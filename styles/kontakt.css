@@ -1,0 +1,231 @@
+ body{
+    background-color:black;  
+    color: rgb(221 164 97);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;      
+ } 
+
+ .navigacija{
+     flex-basis: 300px;     
+ }
+
+
+
+ .map{
+    flex-basis: 300px;
+    border-style: solid;
+    border-right-width: 150px;
+    border-left-width: 150px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-color: black;
+ }
+ 
+ .map h1{
+    font-family: Lucida Handwriting, cursive;
+    letter-spacing: 0.5 mm;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(221 164 97);
+ }
+ 
+ .map p{
+     color: rgb(221 164 97);
+     font-family: Lucida Handwriting, cursive;
+     text-align: center;   
+ }
+
+
+ /* Vrednost hidden znači da veb pregledač treba da odseče deo sadržaja koji ne može da se prikaže. */
+ .map-responsive{
+    flex-basis: 300px;
+    overflow:hidden;
+    position:relative;
+    height:0;
+    border-style: solid;
+    border-right-width: 150px;
+    border-left-width: 150px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-color: black;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+ 
+ .divForme{
+    flex-basis: 300px;
+    padding:5%; 
+    position:relative;
+    height:0;
+    align-self: center;   
+   
+
+}
+ 
+ .divForme h4{
+    color: rgb(221 164 97);
+    font-family: Lucida Handwriting, cursive;
+    text-align: center;    
+ }
+ 
+ input[ type= "text" ] {
+     border-style: solid;
+     border-width: 5px;
+     border-radius: 10px;
+     border-color:rgb(221 164 97) ;
+     align-self: auto;
+     margin-top: 10px;
+     margin-bottom: 10px;    
+ }
+
+ input[ type= "submit" ] {
+     border-style: solid;
+     border-width: 5px;
+     border-radius: 10px;
+     border-color:rgb(221 164 97) ;
+     align-self: auto;
+     margin-top: 5px;
+     margin-bottom: 100px;  
+ }
+ 
+ textarea{
+     border-style: solid;
+     border-width: 5px;
+     border-radius: 10px;
+     border-color:rgb(221 164 97) ;
+     margin-top: 10px;
+     margin-bottom: 10px;  
+ }
+
+/* Ekrani sirine 280px i manje */
+/* Telefoni: Galaxy Fold */
+@media only screen and (max-width: 280px) {
+    .map-responsive {
+        border-right-width: 30px;
+        border-left-width: 30px;
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+        /* border-color: red; */
+    }
+    .map{
+        border-right-width: 30px;
+        border-left-width: 30px;
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+    }
+    input[ type= "text" ] {width:150px}
+    textarea {width:150px}
+  }
+
+
+/* Ekrani sirine 281px i vise */
+/* Telefoni: Moto G4, Galaxy S5, Iphone 5/SE */
+@media only screen and (min-width: 281px) {
+    .map-responsive {
+        border-right-width: 50px;
+        border-left-width: 50px;
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+        /* border-color: green; */
+    }
+    .map{
+        border-right-width: 50px;
+        border-left-width: 50px;
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+    }
+    input[ type= "text" ] {width:250px;}
+    textarea {width:250px;}
+  }
+  
+/* Ekrani sirine 375px i vise */
+/* Telefoni: Pixel 2, Pixel 2 XL, iPhone (6,7,8,8 Plus, X), Surface Duo */
+@media only screen and (min-width: 375px) {
+    .map-responsive {
+        border-right-width: 50px;
+        border-left-width: 50px;
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+        /* border-color: green; */
+    }
+    .map{
+        border-right-width: 50px;
+        border-left-width: 50px;
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+    }
+    input[ type= "text" ] {width:300px}
+    textarea {width:300px}
+  }
+  
+/* Ekrani sirine 768px i vise */
+/* Tableti: iPad */
+@media only screen and (min-width: 768px) {
+    .map-responsive {
+       
+        border-right-width: 70px;
+        border-left-width: 70px;
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+        /* border-color: blue; */
+    }
+    .map{
+        
+        border-right-width: 70px;
+        border-left-width: 70px;
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+    }
+    input[ type= "text" ] {width:350px}
+    textarea {width:350px}
+  } 
+  
+/* Ekrani sirine 1024px i vise */
+/* Tableti: iPad Pro */
+@media only screen and (min-width: 1024px) {
+    .map-responsive {
+        
+        border-right-width: 90px;
+        border-left-width: 90px;
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+        /* border-color: orange; */
+    }
+    .map{
+        
+        border-right-width: 90px;
+        border-left-width: 90px;
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+    }
+    input[ type= "text" ] {width:400px}
+    textarea {width:400px}
+  } 
+  
+/* Ekrani sirine 1080px i vise */
+/* Laptop/PC: ~ */
+@media only screen and (min-width: 1080px) {
+    .map-responsive {
+        border-right-width: 150px;
+        border-left-width: 150px;
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+          /* border-color: pink;   */
+    }
+    .map{
+        border-right-width: 150px;
+        border-left-width: 150px;
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+    }
+    input[ type= "text" ] {width:500px}
+    textarea {width:500px}
+    
+  }

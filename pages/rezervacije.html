@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervacije</title>
+    <link rel="stylesheet" type="text/css" href="../styles/header.css">
+    <link rel="stylesheet" type="text/css" href="../styles/rezervacije.css">
+    <script src="../js/rezervacije.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navigacija">
+            <a href="../index.html">O nama</a>
+            <a href="../pages/jelovnik.html">Jelovnik</a>
+            <a class="aktivna-strana" href="rezervacije.html">Rezervacije</a>
+            <a href="../pages/kontakt.html">Kontakt</a>
+        </nav>
+    </header>
+    <div class="div-rez">
+    <br>
+    <h2>Pozovite 011 3555 995</h2>
+    <h1>REZERVACIJE</h1>
+    <p>Popunite sva polja kako biste rezervisali mesto u našem restoranu. </p>
+
+    <form name="form1" action="#" onsubmit="required()">
+        <label for="imePrezime">Ime i prezime:</label>
+        <br>
+        <input type="text" id="imePrezime" name='unosImePrezime'>
+        <br>
+        <br>
+        <label for="email">E-mail:</label>
+        <br>
+        <input type="text" id="email" name='unosEmail'>
+        <br>
+        <br>
+        <label for="telefon">Broj telefona:</label>
+        <br>
+        <input type="text" id="telefon" name='unosTelefon'>
+        <br>
+        <br>
+        <label for="brojOsoba">Broj osoba:</label>
+        <br>
+        <input type="text" id="brojOsoba" name='unosOsoba'>
+        <br>
+        <br>
+        <label for="datum">Datum</label>
+        <br>
+        <input type="date" id="datum" name="unosDatum">
+        <br>
+        <input type="submit" value="Rezerviši" id="dugme">
+        <input type="reset" value="Izbriši sve unete podatke" id="dugme">
+        
+    </form>
+</div>
+
+</body>
